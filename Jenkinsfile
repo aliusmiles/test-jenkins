@@ -3,8 +3,7 @@ pipeline {
     stages {
         stage ('test') {
             steps {
-                echo 'Hi'
-                sh 'ls'
+                echo 'Hi!!'
             }
         }
     }
