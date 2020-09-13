@@ -4,7 +4,7 @@ pipeline {
         stage ('test') {
             when {
                 not {
-                    changelog '\\[skip-ci\\]'
+                    changelog '\\[skip-ci|ci-skip\\]'
                 }
             }
             steps {
