@@ -10,6 +10,7 @@ pipeline {
             }
             steps {
                 echo 'Hi!!'
+                ehco 'Ahoy'
             }
         }
     }
