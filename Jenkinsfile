@@ -5,7 +5,7 @@ pipeline {
             when {
                 // not {
                     // skip if commit message has [skip-ci] or [ci-skip]
-                    changelog '.*^\\[skip-ci\\] .+$'
+                    changelog '.*^\\[skip-ci\\].+$'
                 // }
             }
             steps {
