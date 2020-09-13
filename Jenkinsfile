@@ -3,10 +3,10 @@ pipeline {
     stages {
         stage ('test') {
             when {
-                // not {
+                not {
                     changelog '\\[skip-ci\\]'
                     //  changelog '.*^.*\\[skip-ci\\].+$'
-                // }
+                }
             }
             steps {
                 echo 'Hi!!'
